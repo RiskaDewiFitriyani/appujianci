@@ -24,6 +24,7 @@ class Welcome extends CI_Controller
      */
     public function index()
     {
+<<<<<<< HEAD
         $this->load->helper('url');
         if (isset($_POST['nama']) && isset($_POST['nim']) && isset($_POST['umur'])) {
             $_SESSION['nama'] = $_POST['nama'];
@@ -32,6 +33,9 @@ class Welcome extends CI_Controller
             redirect('Welcome/tampil');
         }
 
+=======
+        // INI KOMENTAR
+>>>>>>> 907e12c9f4a156951a9de26bd07142b005067d60
         $blade = new Blade(VIEWPATH, APPPATH . 'cache');
         echo $blade->make('form', [])->render();
     }
